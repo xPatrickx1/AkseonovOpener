@@ -1,0 +1,71 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        title WeLoveWhatWeDo
+        link(rel="icon", type="image/png", href="src/images/favicon.png")
+        link(href='dist/lib/bootstrap.min.css', rel='stylesheet')
+        link(href='src/css/style.css', rel='stylesheet')
+        script(type='text/javascript', src='http://code.jquery.com/jquery-latest.min.js')
+        script(src='src/js/js.js')
+        script(src='src/js/index.js')
+
+body
+    .loader_box
+        .loader
+            .double-bounce1
+            .double-bounce2
+
+    .header
+        .container
+            .heat.mov.animation
+                a.logo(href='index.html')
+                    svg(width='65', height='65')
+                        rect.logo_rect(x='5', y='5', width='55', height='55', fill='transparent', stroke='#000', stroke-width='2')
+                        line.logo_line(x1='60', y1='5', x2='5', y2='60', stroke='#000', stroke-width='2')
+                nav.menu
+                    ul.menu__list.list.animation
+                        li.list__item
+                            a.list__link(href='work.html') work
+                        li.list__item
+                            a.list__link(href='about_us.html') about
+                        li.list__item
+                            a.list__link(href='contact.html') contact
+                nav.mobile
+                    button.menu_button Toggle
+                        .icon
+                    .mobile_menu
+                        ul.mobile__list
+                            li.list__item
+                                a.list__link(href='work.html') work
+                            li.list__item
+                                a.list__link(href='about_us.html') about
+                            li.list__item
+                                a.list__link(href='contact.html') contact
+
+
+            .header_container
+                h1.header_text.typewriter.js-typewriter
+                        | We just love what we do.
+                        =' '
+                        br
+                        | Making sweet digital
+                        =' '
+                        br
+                        | dreams come true.
+                .greenline
+                        span(class="outline outline_green mov animation")
+
+
+            section.cd-intro
+                    .cd-intro-content.mask
+                        h3.home_text(data-content="Webdesign")
+                            span Webdesign
+                        h3.home_text(data-content="Motion Graphic")
+                            span Motion&nbspGraphic
+                        h3.home_text(data-content="Branding Identity")
+                            span Branding&nbspIdentity
+                        h3.home_text(data-content="Illustration")
+                            span Illustration
