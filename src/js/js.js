@@ -6,11 +6,6 @@ $(window).on('load', function () {
     $preloader.delay(500).fadeOut('slow');
 });
 
-// window.onload = function (  ) {
-//     document.querySelector('.loader_box');
-//
-// }
-
 
 $(document).ready(function () {
     $(document).on("scroll", onScroll);
